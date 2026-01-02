@@ -6,14 +6,16 @@ PATCH_DIR="$ROOT_DIR/node_module_patches"
 
 echo "Applying node_module patches from $PATCH_DIR"
 
-# Map of source -> dest (relative to repo root)
-declare -A FILES
-FILES["$PATCH_DIR/boost.podspec"]="$ROOT_DIR/node_modules/react-native/third-party-podspecs/boost.podspec"
-FILES["$PATCH_DIR/react_native_pods.rb"]="$ROOT_DIR/node_modules/react-native/scripts/react_native_pods.rb"
-FILES["$PATCH_DIR/FBReactNativeSpec.podspec"]="$ROOT_DIR/node_modules/react-native/React/FBReactNativeSpec/FBReactNativeSpec.podspec"
+# List of source -> dest pairs (relative to repo root)
+FILES=(
+  "$PATCH_DIR/boost.podspec:$ROOT_DIR/node_modules/react-native/third-party-podspecs/boost.podspec"
+  "$PATCH_DIR/react_native_pods.rb:$ROOT_DIR/node_modules/react-native/scripts/react_native_pods.rb"
+  "$PATCH_DIR/FBReactNativeSpec.podspec:$ROOT_DIR/node_modules/react-native/React/FBReactNativeSpec/FBReactNativeSpec.podspec"
+)
 
-for src in "${!FILES[@]}"; do
-  dest="${FILES[$src]}"
+for pair in "${FILES[@]}"; do
+  src="${pair%%:*}"
+  dest="${pair##*:}"
   if [ -f "$src" ]; then
     if [ -f "$dest" ]; then
       echo "Backing up existing: $dest -> ${dest}.bak"
