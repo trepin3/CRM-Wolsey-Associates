@@ -1,0 +1,17 @@
+node_modules/
+**/node_modules/
+.env
+.env.local
+*.log
+dist/
+build/
+.expo/
+.expo-shared/
+**/.DS_Store
+coverage/
+.idea/
+.vscode/
+.pnp.*
+.yarn/*
+**/*.sqlite
+**/*.db

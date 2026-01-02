@@ -1,0 +1,16 @@
+{
+  "expo": {
+    "name": "wolsey-associates-crm",
+    "slug": "wolsey-associates-crm",
+    "version": "0.1.0",
+    "sdkVersion": "48.0.0",
+    "platforms": [
+      "ios",
+      "android",
+      "web"
+    ],
+    "ios": {
+      "bundleIdentifier": "com.anonymous.wolsey-associates-crm"
+    }
+  }
+}

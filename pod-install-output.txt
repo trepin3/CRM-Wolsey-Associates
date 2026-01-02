@@ -1,0 +1,326 @@
+
+Using Expo modules
+  — expo (48.0.21)
+  — expo-application (5.1.1)
+  [Expo] Enabling modular headers for pod ExpoModulesCore
+  — expo-constants (14.2.1)
+  — expo-file-system (15.2.2)
+  — expo-font (11.1.1)
+  — expo-keep-awake (12.0.1)
+  — expo-modules-core (1.2.7)
+  — expo-splash-screen (0.18.2)
+  $ /usr/local/bin/node -e try {console.log(require('@react-native-community/cli').bin);} catch (e) {console.log(require('react-native/cli').bin);}
+  /Users/keplerwolsey/Desktop/Web Dev U.S. AI Divison/Wolsey_&_Associates/node_modules/@react-native-community/cli/build/bin.js
+Framework build type is static library
+  $ /bin/mkdir -p ./build/generated/ios
+[Codegen] Generating ./build/generated/ios/React-Codegen.podspec.json
+  Preparing
+
+Updating local specs repositories
+
+Adding spec repo `trunk` with CDN `https://cdn.cocoapods.org/`
+  CDN: trunk Relative path downloaded: CocoaPods-version.yml, save ETag: "69570882-38"
+  CDN: trunk Relative path: CocoaPods-version.yml exists! Returning local because checking is only performed in repo update
+
+Updating spec repo `trunk`
+  CDN: trunk Relative path downloaded: deprecated_podspecs.txt, save ETag: W/"695706d1-d2aa4"
+  CDN: trunk Going to update 1 files
+  CDN: trunk Relative path: CocoaPods-version.yml, has ETag? "69570882-38"
+  CDN: trunk Relative path not modified: CocoaPods-version.yml
+
+Analyzing dependencies
+
+Inspecting targets to integrate
+  Using `ARCHS` setting to build architectures of target `Pods-wolseyassociatescrm`: (``)
+
+Fetching external sources
+-> Fetching podspec for `DoubleConversion` from `../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec`
+-> Fetching podspec for `EXApplication` from `../node_modules/expo-application/ios`
+-> Fetching podspec for `EXConstants` from `../node_modules/expo-constants/ios`
+-> Fetching podspec for `EXFileSystem` from `../node_modules/expo-file-system/ios`
+-> Fetching podspec for `EXFont` from `../node_modules/expo-font/ios`
+-> Fetching podspec for `EXSplashScreen` from `../node_modules/expo-splash-screen/ios`
+-> Fetching podspec for `Expo` from `../node_modules/expo`
+-> Fetching podspec for `ExpoKeepAwake` from `../node_modules/expo-keep-awake/ios`
+-> Fetching podspec for `ExpoModulesCore` from `../node_modules/expo-modules-core`
+-> Fetching podspec for `FBLazyVector` from `../node_modules/react-native/Libraries/FBLazyVector`
+-> Fetching podspec for `FBReactNativeSpec` from `../node_modules/react-native/React/FBReactNativeSpec`
+[Codegen] Found FbreactnativespecSpec
+-> Fetching podspec for `RCT-Folly` from `../node_modules/react-native/third-party-podspecs/RCT-Folly.podspec`
+-> Fetching podspec for `RCTRequired` from `../node_modules/react-native/Libraries/RCTRequired`
+-> Fetching podspec for `RCTTypeSafety` from `../node_modules/react-native/Libraries/TypeSafety`
+-> Fetching podspec for `React` from `../node_modules/react-native/`
+-> Fetching podspec for `React-Codegen` from `build/generated/ios`
+-> Fetching podspec for `React-Core` from `../node_modules/react-native/`
+-> Fetching podspec for `React-CoreModules` from `../node_modules/react-native/React/CoreModules`
+-> Fetching podspec for `React-RCTActionSheet` from `../node_modules/react-native/Libraries/ActionSheetIOS`
+-> Fetching podspec for `React-RCTAnimation` from `../node_modules/react-native/Libraries/NativeAnimation`
+-> Fetching podspec for `React-RCTAppDelegate` from `../node_modules/react-native/Libraries/AppDelegate`
+-> Fetching podspec for `React-RCTBlob` from `../node_modules/react-native/Libraries/Blob`
+-> Fetching podspec for `React-RCTImage` from `../node_modules/react-native/Libraries/Image`
+-> Fetching podspec for `React-RCTLinking` from `../node_modules/react-native/Libraries/LinkingIOS`
+-> Fetching podspec for `React-RCTNetwork` from `../node_modules/react-native/Libraries/Network`
+-> Fetching podspec for `React-RCTSettings` from `../node_modules/react-native/Libraries/Settings`
+-> Fetching podspec for `React-RCTText` from `../node_modules/react-native/Libraries/Text`
+-> Fetching podspec for `React-RCTVibration` from `../node_modules/react-native/Libraries/Vibration`
+-> Fetching podspec for `React-callinvoker` from `../node_modules/react-native/ReactCommon/callinvoker`
+-> Fetching podspec for `React-cxxreact` from `../node_modules/react-native/ReactCommon/cxxreact`
+-> Fetching podspec for `React-hermes` from `../node_modules/react-native/ReactCommon/hermes`
+-> Fetching podspec for `React-jsi` from `../node_modules/react-native/ReactCommon/jsi`
+-> Fetching podspec for `React-jsiexecutor` from `../node_modules/react-native/ReactCommon/jsiexecutor`
+-> Fetching podspec for `React-jsinspector` from `../node_modules/react-native/ReactCommon/jsinspector`
+-> Fetching podspec for `React-logger` from `../node_modules/react-native/ReactCommon/logger`
+-> Fetching podspec for `React-perflogger` from `../node_modules/react-native/ReactCommon/reactperflogger`
+-> Fetching podspec for `React-runtimeexecutor` from `../node_modules/react-native/ReactCommon/runtimeexecutor`
+-> Fetching podspec for `ReactCommon` from `../node_modules/react-native/ReactCommon`
+-> Fetching podspec for `Yoga` from `../node_modules/react-native/ReactCommon/yoga`
+-> Fetching podspec for `boost` from `../node_modules/react-native/third-party-podspecs/boost.podspec`
+-> Fetching podspec for `glog` from `../node_modules/react-native/third-party-podspecs/glog.podspec`
+-> Fetching podspec for `hermes-engine` from `../node_modules/react-native/sdks/hermes-engine/hermes-engine.podspec`
+
+Resolving dependencies of `Podfile`
+  CDN: trunk URL couldn't be downloaded: https://cdn.cocoapods.org/all_pods_versions_0_9_9.txt Response: Error in the HTTP2 framing layer, retries: 4
+  CDN: trunk Relative path downloaded: all_pods_versions_0_9_9.txt, save ETag: W/"69570882-7c5"
+  CDN: trunk Redirecting from https://cdn.cocoapods.org/Specs/0/9/9/libevent/2.1.11/libevent.podspec.json to https://cdn.jsdelivr.net/cocoa/Specs/0/9/9/libevent/2.1.11/libevent.podspec.json
+  CDN: trunk Redirecting from https://cdn.cocoapods.org/Specs/0/9/9/libevent/2.1.12/libevent.podspec.json to https://cdn.jsdelivr.net/cocoa/Specs/0/9/9/libevent/2.1.12/libevent.podspec.json
+  CDN: trunk Relative path downloaded: Specs/0/9/9/libevent/2.1.11/libevent.podspec.json, save ETag: W/"61cd-hnzAPmVEFWdbys+XJocaN8S1a4o"
+  CDN: trunk Relative path downloaded: Specs/0/9/9/libevent/2.1.12/libevent.podspec.json, save ETag: W/"620c-QEnK5sgc2zZUpEO+AB+5vc7/eRM"
+  CDN: trunk Relative path: Specs/0/9/9/libevent/2.1.12/libevent.podspec.json modified during this run! Returning local
+  CDN: trunk Relative path downloaded: all_pods_versions_7_6_3.txt, save ETag: W/"69570881-307"
+  CDN: trunk Redirecting from https://cdn.cocoapods.org/Specs/7/6/3/fmt/6.2.1/fmt.podspec.json to https://cdn.jsdelivr.net/cocoa/Specs/7/6/3/fmt/6.2.1/fmt.podspec.json
+  CDN: trunk Redirecting from https://cdn.cocoapods.org/Specs/7/6/3/fmt/7.1.3/fmt.podspec.json to https://cdn.jsdelivr.net/cocoa/Specs/7/6/3/fmt/7.1.3/fmt.podspec.json
+  CDN: trunk Relative path downloaded: Specs/7/6/3/fmt/6.2.1/fmt.podspec.json, save ETag: W/"3da-/51VApxiXTdX7WQVNf1Kdf7cfOk"
+  CDN: trunk Relative path downloaded: Specs/7/6/3/fmt/7.1.3/fmt.podspec.json, save ETag: W/"3c4-My44Ga+PSunArhrijc+q9F+V4Qc"
+  CDN: trunk Relative path: Specs/7/6/3/fmt/7.1.3/fmt.podspec.json modified during this run! Returning local
+  CDN: trunk Relative path: Specs/7/6/3/fmt/6.2.1/fmt.podspec.json modified during this run! Returning local
+  CDN: trunk Relative path: Specs/0/9/9/libevent/2.1.12/libevent.podspec.json modified during this run! Returning local
+  CDN: trunk Relative path: Specs/0/9/9/libevent/2.1.12/libevent.podspec.json modified during this run! Returning local
+
+Comparing resolved specification to the sandbox manifest
+  A DoubleConversion
+  A EXApplication
+  A EXConstants
+  A EXFileSystem
+  A EXFont
+  A EXSplashScreen
+  A Expo
+  A ExpoKeepAwake
+  A ExpoModulesCore
+  A FBLazyVector
+  A FBReactNativeSpec
+  A RCT-Folly
+  A RCTRequired
+  A RCTTypeSafety
+  A React
+  A React-Codegen
+  A React-Core
+  A React-CoreModules
+  A React-RCTActionSheet
+  A React-RCTAnimation
+  A React-RCTAppDelegate
+  A React-RCTBlob
+  A React-RCTImage
+  A React-RCTLinking
+  A React-RCTNetwork
+  A React-RCTSettings
+  A React-RCTText
+  A React-RCTVibration
+  A React-callinvoker
+  A React-cxxreact
+  A React-hermes
+  A React-jsi
+  A React-jsiexecutor
+  A React-jsinspector
+  A React-logger
+  A React-perflogger
+  A React-runtimeexecutor
+  A ReactCommon
+  A Yoga
+  A boost
+  A fmt
+  A glog
+  A hermes-engine
+  A libevent
+
+Downloading dependencies
+
+-> Installing DoubleConversion (1.1.6)
+ > Git download
+ > Git download
+     $ /usr/bin/git clone https://github.com/google/double-conversion.git /var/folders/mz/31xm49cx4wz4cft0tj8vbwjh0000gn/T/d20260101-51448-t0wq5r --template= --single-branch --depth 1 --branch v1.1.6
+     Cloning into '/var/folders/mz/31xm49cx4wz4cft0tj8vbwjh0000gn/T/d20260101-51448-t0wq5r'...
+     Note: switching to '361924fb61c043627d4179e941a102d543f6efa0'.
+     
+     You are in 'detached HEAD' state. You can look around, make experimental
+     changes and commit them, and you can discard any commits you make in this
+     state without impacting any branches by switching back to a branch.
+     
+     If you want to create a new branch to retain commits you create, you may
+     do so (now or later) by using -c with the switch command. Example:
+     
+       git switch -c <new-branch-name>
+     
+     Or undo this operation with:
+     
+       git switch -
+     
+     Turn off this advice by setting config variable advice.detachedHead to false
+     
+  $ /usr/bin/rsync -a --exclude=.git --delete /var/folders/mz/31xm49cx4wz4cft0tj8vbwjh0000gn/T/d20260101-51448-t0wq5r/ /Users/keplerwolsey/Library/Caches/CocoaPods/Pods/External/DoubleConversion/77f51e588bfe0e5c4fa6e9c580da62c6-5189b
+ > Running prepare command
+   $ /bin/bash -c  set -e mv src double-conversion
+  > Copying DoubleConversion from `/Users/keplerwolsey/Library/Caches/CocoaPods/Pods/External/DoubleConversion/77f51e588bfe0e5c4fa6e9c580da62c6-5189b` to `Pods/DoubleConversion`
+
+-> Installing EXApplication (5.1.1)
+
+-> Installing EXConstants (14.2.1)
+
+-> Installing EXFileSystem (15.2.2)
+
+-> Installing EXFont (11.1.1)
+
+-> Installing EXSplashScreen (0.18.2)
+
+-> Installing Expo (48.0.21)
+
+-> Installing ExpoKeepAwake (12.0.1)
+
+-> Installing ExpoModulesCore (1.2.7)
+
+-> Installing FBLazyVector (0.71.14)
+
+-> Installing FBReactNativeSpec (0.71.14)
+ > Running prepare command
+   $ /bin/bash -c  set -e mkdir -p ../../../../ios/build/generated/ios/./FbreactnativespecSpec ../../../../ios/build/generated/ios/react/renderer/components/FbreactnativespecSpec && touch -a ../../../../ios/build/generated/ios/./FbreactnativespecSpec/FbreactnativespecSpec.h ../../../../ios/build/generated/ios/./FbreactnativespecSpec/FbreactnativespecSpec-generated.mm ../../../../ios/build/generated/ios/react/renderer/components/FbreactnativespecSpec/ComponentDescriptors.h ../../../../ios/build/generated/ios/react/renderer/components/FbreactnativespecSpec/EventEmitters.cpp ../../../../ios/build/generated/ios/react/renderer/components/FbreactnativespecSpec/EventEmitters.h ../../../../ios/build/generated/ios/react/renderer/components/FbreactnativespecSpec/Props.cpp ../../../../ios/build/generated/ios/react/renderer/components/FbreactnativespecSpec/Props.h ../../../../ios/build/generated/ios/react/renderer/components/FbreactnativespecSpec/States.cpp ../../../../ios/build/generated/ios/react/renderer/components/FbreactnativespecSpec/States.h ../../../../ios/build/generated/ios/react/renderer/components/FbreactnativespecSpec/RCTComponentViewHelpers.h ../../../../ios/build/generated/ios/react/renderer/components/FbreactnativespecSpec/ShadowNodes.cpp ../../../../ios/build/generated/ios/react/renderer/components/FbreactnativespecSpec/ShadowNodes.h
+
+-> Installing RCT-Folly (2021.07.22.00)
+ > Git download
+ > Git download
+     $ /usr/bin/git clone https://github.com/facebook/folly.git /var/folders/mz/31xm49cx4wz4cft0tj8vbwjh0000gn/T/d20260101-51448-a3ytn3 --template= --single-branch --depth 1 --branch v2021.07.22.00
+     Cloning into '/var/folders/mz/31xm49cx4wz4cft0tj8vbwjh0000gn/T/d20260101-51448-a3ytn3'...
+     Note: switching to '4baba28200d7446c870e96f3cdbeb492f54625d0'.
+     
+     You are in 'detached HEAD' state. You can look around, make experimental
+     changes and commit them, and you can discard any commits you make in this
+     state without impacting any branches by switching back to a branch.
+     
+     If you want to create a new branch to retain commits you create, you may
+     do so (now or later) by using -c with the switch command. Example:
+     
+       git switch -c <new-branch-name>
+     
+     Or undo this operation with:
+     
+       git switch -
+     
+     Turn off this advice by setting config variable advice.detachedHead to false
+     
+  $ /usr/bin/rsync -a --exclude=.git --delete /var/folders/mz/31xm49cx4wz4cft0tj8vbwjh0000gn/T/d20260101-51448-a3ytn3/ /Users/keplerwolsey/Library/Caches/CocoaPods/Pods/External/RCT-Folly/b957572a7e21d425b31cc1761b00a672-8dc08
+  > Copying RCT-Folly from `/Users/keplerwolsey/Library/Caches/CocoaPods/Pods/External/RCT-Folly/b957572a7e21d425b31cc1761b00a672-8dc08` to `Pods/RCT-Folly`
+
+-> Installing RCTRequired (0.71.14)
+
+-> Installing RCTTypeSafety (0.71.14)
+
+-> Installing React (0.71.14)
+
+-> Installing React-Codegen (0.71.14)
+
+-> Installing React-Core (0.71.14)
+
+-> Installing React-CoreModules (0.71.14)
+
+-> Installing React-RCTActionSheet (0.71.14)
+
+-> Installing React-RCTAnimation (0.71.14)
+
+-> Installing React-RCTAppDelegate (0.71.14)
+
+-> Installing React-RCTBlob (0.71.14)
+
+-> Installing React-RCTImage (0.71.14)
+
+-> Installing React-RCTLinking (0.71.14)
+
+-> Installing React-RCTNetwork (0.71.14)
+
+-> Installing React-RCTSettings (0.71.14)
+
+-> Installing React-RCTText (0.71.14)
+
+-> Installing React-RCTVibration (0.71.14)
+
+-> Installing React-callinvoker (0.71.14)
+
+-> Installing React-cxxreact (0.71.14)
+
+-> Installing React-hermes (0.71.14)
+
+-> Installing React-jsi (0.71.14)
+
+-> Installing React-jsiexecutor (0.71.14)
+
+-> Installing React-jsinspector (0.71.14)
+
+-> Installing React-logger (0.71.14)
+
+-> Installing React-perflogger (0.71.14)
+
+-> Installing React-runtimeexecutor (0.71.14)
+
+-> Installing ReactCommon (0.71.14)
+
+-> Installing Yoga (1.14.0)
+
+-> Installing boost (1.76.0)
+ > Http download
+   $ /usr/bin/curl -f -L -o /var/folders/mz/31xm49cx4wz4cft0tj8vbwjh0000gn/T/d20260101-51448-3mfor6/file.tbz https://boostorg.jfrog.io/artifactory/main/release/1.76.0/source/boost_1_76_0.tar.bz2 --create-dirs --netrc-optional --retry 2 -A 'CocoaPods/1.16.2 cocoapods-downloader/2.1'
+     % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                    Dload  Upload   Total   Spent    Left  Speed
+        0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0   100   138  100   138    0     0    292      0 --:--:-- --:--:-- --:--:--   292
+        0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0   100 11446  100 11446    0     0  10898      0  0:00:01  0:00:01 --:--:-- 20439
+
+[!] Error installing boost
+Verification checksum was incorrect, expected f0397ba6e982c4450f27bf32a2a83292aba035b827a5623a14636ea583318c41, got 1c162b579a423fa6876c6c5bc16d39ab4bc05e28898977a0a6af345f523f6357
+
+/usr/local/Cellar/cocoapods/1.16.2_2/libexec/gems/cocoapods-downloader-2.1/lib/cocoapods-downloader/remote_file.rb:146:in 'Pod::Downloader::RemoteFile#compare_hash'
+/usr/local/Cellar/cocoapods/1.16.2_2/libexec/gems/cocoapods-downloader-2.1/lib/cocoapods-downloader/remote_file.rb:162:in 'Pod::Downloader::RemoteFile#verify_sha256_hash'
+/usr/local/Cellar/cocoapods/1.16.2_2/libexec/gems/cocoapods-downloader-2.1/lib/cocoapods-downloader/remote_file.rb:169:in 'Pod::Downloader::RemoteFile#verify_checksum'
+/usr/local/Cellar/cocoapods/1.16.2_2/libexec/gems/cocoapods-downloader-2.1/lib/cocoapods-downloader/remote_file.rb:26:in 'Pod::Downloader::RemoteFile#download!'
+/usr/local/Cellar/cocoapods/1.16.2_2/libexec/gems/cocoapods-downloader-2.1/lib/cocoapods-downloader/base.rb:83:in 'block in Pod::Downloader::Base#download'
+/usr/local/Cellar/cocoapods/1.16.2_2/libexec/gems/cocoapods-1.16.2/lib/cocoapods/downloader.rb:159:in 'block in ui_action'
+/usr/local/Cellar/cocoapods/1.16.2_2/libexec/gems/cocoapods-1.16.2/lib/cocoapods/user_interface.rb:64:in 'Pod::UserInterface.section'
+/usr/local/Cellar/cocoapods/1.16.2_2/libexec/gems/cocoapods-1.16.2/lib/cocoapods/downloader.rb:158:in 'ui_action'
+/usr/local/Cellar/cocoapods/1.16.2_2/libexec/gems/cocoapods-downloader-2.1/lib/cocoapods-downloader/base.rb:81:in 'Pod::Downloader::Base#download'
+/usr/local/Cellar/cocoapods/1.16.2_2/libexec/gems/cocoapods-1.16.2/lib/cocoapods/downloader.rb:110:in 'Pod::Downloader.download_source'
+/usr/local/Cellar/cocoapods/1.16.2_2/libexec/gems/cocoapods-1.16.2/lib/cocoapods/downloader.rb:77:in 'Pod::Downloader.download_request'
+/usr/local/Cellar/cocoapods/1.16.2_2/libexec/gems/cocoapods-1.16.2/lib/cocoapods/downloader/cache.rb:256:in 'Pod::Downloader::Cache#download'
+/usr/local/Cellar/cocoapods/1.16.2_2/libexec/gems/cocoapods-1.16.2/lib/cocoapods/downloader/cache.rb:239:in 'block in Pod::Downloader::Cache#uncached_pod'
+/usr/local/Cellar/cocoapods/1.16.2_2/libexec/gems/cocoapods-1.16.2/lib/cocoapods/downloader/cache.rb:266:in 'Pod::Downloader::Cache#in_tmpdir'
+/usr/local/Cellar/cocoapods/1.16.2_2/libexec/gems/cocoapods-1.16.2/lib/cocoapods/downloader/cache.rb:238:in 'Pod::Downloader::Cache#uncached_pod'
+/usr/local/Cellar/cocoapods/1.16.2_2/libexec/gems/cocoapods-1.16.2/lib/cocoapods/downloader/cache.rb:33:in 'Pod::Downloader::Cache#download_pod'
+/usr/local/Cellar/cocoapods/1.16.2_2/libexec/gems/cocoapods-1.16.2/lib/cocoapods/downloader.rb:42:in 'Pod::Downloader.download'
+/usr/local/Cellar/cocoapods/1.16.2_2/libexec/gems/cocoapods-1.16.2/lib/cocoapods/installer/pod_source_downloader.rb:69:in 'Pod::Installer::PodSourceDownloader#download!'
+/usr/local/Cellar/cocoapods/1.16.2_2/libexec/gems/cocoapods-1.16.2/lib/cocoapods/installer/pod_source_installer.rb:117:in 'Pod::Installer::PodSourceInstaller#download_source'
+/usr/local/Cellar/cocoapods/1.16.2_2/libexec/gems/cocoapods-1.16.2/lib/cocoapods/installer/pod_source_installer.rb:67:in 'Pod::Installer::PodSourceInstaller#install!'
+/usr/local/Cellar/cocoapods/1.16.2_2/libexec/gems/cocoapods-1.16.2/lib/cocoapods/installer.rb:621:in 'Pod::Installer#install_source_of_pod'
+/usr/local/Cellar/cocoapods/1.16.2_2/libexec/gems/cocoapods-1.16.2/lib/cocoapods/installer.rb:539:in 'block (2 levels) in Pod::Installer#install_pod_sources'
+/usr/local/Cellar/cocoapods/1.16.2_2/libexec/gems/cocoapods-1.16.2/lib/cocoapods/user_interface.rb:86:in 'Pod::UserInterface.titled_section'
+/usr/local/Cellar/cocoapods/1.16.2_2/libexec/gems/cocoapods-1.16.2/lib/cocoapods/installer.rb:538:in 'block in Pod::Installer#install_pod_sources'
+/usr/local/Cellar/cocoapods/1.16.2_2/libexec/gems/cocoapods-1.16.2/lib/cocoapods/installer.rb:535:in 'Array#each'
+/usr/local/Cellar/cocoapods/1.16.2_2/libexec/gems/cocoapods-1.16.2/lib/cocoapods/installer.rb:535:in 'Pod::Installer#install_pod_sources'
+/usr/local/Cellar/cocoapods/1.16.2_2/libexec/gems/cocoapods-1.16.2/lib/cocoapods/installer.rb:258:in 'block in Pod::Installer#download_dependencies'
+/usr/local/Cellar/cocoapods/1.16.2_2/libexec/gems/cocoapods-1.16.2/lib/cocoapods/user_interface.rb:64:in 'Pod::UserInterface.section'
+/usr/local/Cellar/cocoapods/1.16.2_2/libexec/gems/cocoapods-1.16.2/lib/cocoapods/installer.rb:257:in 'Pod::Installer#download_dependencies'
+/usr/local/Cellar/cocoapods/1.16.2_2/libexec/gems/cocoapods-1.16.2/lib/cocoapods/installer.rb:163:in 'Pod::Installer#install!'
+/usr/local/Cellar/cocoapods/1.16.2_2/libexec/gems/cocoapods-1.16.2/lib/cocoapods/command/install.rb:52:in 'Pod::Command::Install#run'
+/usr/local/Cellar/cocoapods/1.16.2_2/libexec/gems/claide-1.1.0/lib/claide/command.rb:334:in 'CLAide::Command.run'
+/usr/local/Cellar/cocoapods/1.16.2_2/libexec/gems/cocoapods-1.16.2/lib/cocoapods/command.rb:52:in 'Pod::Command.run'
+/usr/local/Cellar/cocoapods/1.16.2_2/libexec/gems/cocoapods-1.16.2/bin/pod:55:in '<top (required)>'
+/usr/local/Cellar/ruby/4.0.0/lib/ruby/4.0.0/rubygems.rb:303:in 'Kernel#load'
+/usr/local/Cellar/ruby/4.0.0/lib/ruby/4.0.0/rubygems.rb:303:in 'Gem.activate_and_load_bin_path'
+/usr/local/Cellar/cocoapods/1.16.2_2/libexec/bin/pod:25:in '<main>'
+
+[!] [DEBUG] could not inspect use_react_native_codegen!: undefined method 'use_react_native_codegen!' for class '#<Class:#<Object:0x0000000101d9b7a8>>'
+
+[!] Skipping use_react_native_codegen!: wrong number of arguments (given 3, expected 1)
